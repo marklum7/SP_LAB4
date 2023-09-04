@@ -19,14 +19,14 @@ public class Main {
             max=0;
             col=0;
             for(int i =0;i<nums.length;i++){
-                if (nums[i]>max){
+                if (nums[i]>col){
                     col = nums[i];
                     max = i+1;
                 }
             }
             System.out.println(max);
             System.out.println(col);
-            nums[col - 1]=0;
+            nums[max - 1]=0;
         }
     }
 }
